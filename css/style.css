@@ -68,6 +68,7 @@
 .burger-menu__link {
     display: block;
     padding: 5px 0;
+    transition: all 0.5s ease;
 }
 
 .burger-menu__link:hover {
@@ -80,7 +81,7 @@
     gap: 40px;
     color: #FFF;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 122.8%;
@@ -92,6 +93,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.nav__item a {
+    transition: all 0.5s ease;
 }
 
 .nav__item a:hover {
@@ -227,7 +232,6 @@
 }
 
 .button {
-
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -239,6 +243,7 @@
     font-weight: 400;
     line-height: 19px;
     text-transform: uppercase;
+    transition: all 0.5s ease;
 }
 
 .button_form {
@@ -527,7 +532,7 @@
 }
 
 .puzzle__img {
-    max-width: 110%;
+    max-width: 109%;
     min-height: 17rem;
 }
 
@@ -536,7 +541,7 @@
 }
 
 .puzzle_three img {
-    height: 18rem;
+    height: 18.5rem;
 }
 
 .puzzle_five {
@@ -766,6 +771,16 @@
     .puzzle_three {
         margin-left: 15px;
     }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        width: 1.9rem;
+        left: -2.5rem;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        width: 1.9rem;
+        right: -2.5rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -792,7 +807,7 @@
     }
 
     .puzzle__text {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .puzzle_five {
@@ -802,7 +817,6 @@
 
     .puzzle_six {
         margin-left: 0;
-
     }
 
     .puzzle_three {
@@ -811,6 +825,15 @@
 
     .puzzle_four {
         width: 96%;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        width: 1.9rem;
+        left: -2rem;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        width: 1.9rem;
+        right: -2rem;
     }
 }
 
@@ -824,13 +847,15 @@
     }
 
     .owl-carousel .owl-nav button.owl-prev {
-        width: 1.9rem;
-        left: -2.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        left: -1.7rem;
     }
 
     .owl-carousel .owl-nav button.owl-next {
-        width: 1.9rem;
-        right: -2.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        right: -1.7rem;
     }
 }
 
@@ -950,11 +975,11 @@
     }
 
     .owl-carousel .owl-nav button.owl-prev {
-        left: -2rem;
+        left: -1.8rem;
     }
 
     .owl-carousel .owl-nav button.owl-next {
-        right: -2rem;
+        right: -1.8rem;
     }
 }
 
@@ -1044,7 +1069,6 @@
 
     .producer__title {
         font-size: 38px;
-
     }
 
     .producer__description {
